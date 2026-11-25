@@ -14,7 +14,7 @@ class MinimalHRApp extends App.AppBase {
     function getSettingsView() as [Ui.Views, Ui.InputDelegates] {
         var menu = new Ui.Menu2({:title => "Minimal HR"});
         menu.addItem(new Ui.ToggleMenuItem("BPM number", null, "showBpm", App.Properties.getValue("showBpm") == true, {}));
-        menu.addItem(new Ui.ToggleMenuItem("Gauge colors", null, "colorGauge", App.Properties.getValue("colorGauge") == true, {}));
+        menu.addItem(new Ui.ToggleMenuItem("Gradient pulse gauge", null, "colorGauge", App.Properties.getValue("colorGauge") == true, {}));
         return [menu, new MinimalHRSettingsDelegate()];
     }
 

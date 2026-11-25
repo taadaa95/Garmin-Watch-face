@@ -1,3 +1,17 @@
 <drawables>
     <bitmap id="LauncherIcon" filename="launcher.png"/>
+    <bitmap id="RetroFrame" filename="frame.png" dithering="none" packingFormat="png"/>
+    <bitmap id="RetroColon" filename="colon.png" dithering="none" packingFormat="png"/>
+    <bitmap id="BlankTube" filename="blank.png" dithering="none" packingFormat="png"/>
+    <bitmap id="Digit0" filename="digit0.png" dithering="none" packingFormat="png"/>
+    <bitmap id="Digit1" filename="digit1.png" dithering="none" packingFormat="png"/>
+    <bitmap id="Digit2" filename="digit2.png" dithering="none" packingFormat="png"/>
+    <bitmap id="Digit3" filename="digit3.png" dithering="none" packingFormat="png"/>
+    <bitmap id="Digit4" filename="digit4.png" dithering="none" packingFormat="png"/>
+    <bitmap id="Digit5" filename="digit5.png" dithering="none" packingFormat="png"/>
+    <bitmap id="Digit6" filename="digit6.png" dithering="none" packingFormat="png"/>
+    <bitmap id="Digit7" filename="digit7.png" dithering="none" packingFormat="png"/>
+    <bitmap id="Digit8" filename="digit8.png" dithering="none" packingFormat="png"/>
+    <bitmap id="Digit9" filename="digit9.png" dithering="none" packingFormat="png"/>
+    <bitmap id="BpmLabel" filename="bpm.png" dithering="none" packingFormat="png"/>
 </drawables>
