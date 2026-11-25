@@ -1,0 +1,4 @@
+<properties>
+    <property id="showBpm" type="boolean">true</property>
+    <property id="colorGauge" type="boolean">true</property>
+</properties>

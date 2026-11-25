@@ -1,0 +1,8 @@
+<settings>
+    <setting propertyKey="@Properties.showBpm" title="@Strings.ShowBpm">
+        <settingConfig type="boolean"/>
+    </setting>
+    <setting propertyKey="@Properties.colorGauge" title="@Strings.ColorGauge">
+        <settingConfig type="boolean"/>
+    </setting>
+</settings>
