@@ -1,0 +1,25 @@
+<drawables>
+    <bitmap id="LauncherIcon" filename="launcher.png"/>
+    <bitmap id="Colon" filename="colon.png" dithering="none" packingFormat="png"/>
+    <bitmap id="Digit0" filename="digit0.png" dithering="none" packingFormat="png"/>
+    <bitmap id="Digit1" filename="digit1.png" dithering="none" packingFormat="png"/>
+    <bitmap id="Digit2" filename="digit2.png" dithering="none" packingFormat="png"/>
+    <bitmap id="Digit3" filename="digit3.png" dithering="none" packingFormat="png"/>
+    <bitmap id="Digit4" filename="digit4.png" dithering="none" packingFormat="png"/>
+    <bitmap id="Digit5" filename="digit5.png" dithering="none" packingFormat="png"/>
+    <bitmap id="Digit6" filename="digit6.png" dithering="none" packingFormat="png"/>
+    <bitmap id="Digit7" filename="digit7.png" dithering="none" packingFormat="png"/>
+    <bitmap id="Digit8" filename="digit8.png" dithering="none" packingFormat="png"/>
+    <bitmap id="Digit9" filename="digit9.png" dithering="none" packingFormat="png"/>
+    <bitmap id="DimColon" filename="dim_colon.png" dithering="none" packingFormat="png"/>
+    <bitmap id="DimDigit0" filename="dim_digit0.png" dithering="none" packingFormat="png"/>
+    <bitmap id="DimDigit1" filename="dim_digit1.png" dithering="none" packingFormat="png"/>
+    <bitmap id="DimDigit2" filename="dim_digit2.png" dithering="none" packingFormat="png"/>
+    <bitmap id="DimDigit3" filename="dim_digit3.png" dithering="none" packingFormat="png"/>
+    <bitmap id="DimDigit4" filename="dim_digit4.png" dithering="none" packingFormat="png"/>
+    <bitmap id="DimDigit5" filename="dim_digit5.png" dithering="none" packingFormat="png"/>
+    <bitmap id="DimDigit6" filename="dim_digit6.png" dithering="none" packingFormat="png"/>
+    <bitmap id="DimDigit7" filename="dim_digit7.png" dithering="none" packingFormat="png"/>
+    <bitmap id="DimDigit8" filename="dim_digit8.png" dithering="none" packingFormat="png"/>
+    <bitmap id="DimDigit9" filename="dim_digit9.png" dithering="none" packingFormat="png"/>
+</drawables>

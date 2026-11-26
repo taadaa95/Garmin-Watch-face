@@ -1,0 +1,79 @@
+<drawables>
+    <bitmap id="LauncherIcon" filename="launcher.png"/>
+    <bitmap id="Colon" filename="colon.png" dithering="none" packingFormat="png"/>
+    <bitmap id="Digit0" filename="digit0.png" dithering="none" packingFormat="png"/>
+    <bitmap id="Digit1" filename="digit1.png" dithering="none" packingFormat="png"/>
+    <bitmap id="Digit2" filename="digit2.png" dithering="none" packingFormat="png"/>
+    <bitmap id="Digit3" filename="digit3.png" dithering="none" packingFormat="png"/>
+    <bitmap id="Digit4" filename="digit4.png" dithering="none" packingFormat="png"/>
+    <bitmap id="Digit5" filename="digit5.png" dithering="none" packingFormat="png"/>
+    <bitmap id="Digit6" filename="digit6.png" dithering="none" packingFormat="png"/>
+    <bitmap id="Digit7" filename="digit7.png" dithering="none" packingFormat="png"/>
+    <bitmap id="Digit8" filename="digit8.png" dithering="none" packingFormat="png"/>
+    <bitmap id="Digit9" filename="digit9.png" dithering="none" packingFormat="png"/>
+    <bitmap id="Sky" filename="sky.png" compress="true"/>
+    <bitmap id="Moon00" filename="moon00.png" compress="true"/>
+    <bitmap id="Moon01" filename="moon01.png" compress="true"/>
+    <bitmap id="Moon02" filename="moon02.png" compress="true"/>
+    <bitmap id="Moon03" filename="moon03.png" compress="true"/>
+    <bitmap id="Moon04" filename="moon04.png" compress="true"/>
+    <bitmap id="Moon05" filename="moon05.png" compress="true"/>
+    <bitmap id="Moon06" filename="moon06.png" compress="true"/>
+    <bitmap id="Moon07" filename="moon07.png" compress="true"/>
+    <bitmap id="Moon08" filename="moon08.png" compress="true"/>
+    <bitmap id="Moon09" filename="moon09.png" compress="true"/>
+    <bitmap id="Moon10" filename="moon10.png" compress="true"/>
+    <bitmap id="Moon11" filename="moon11.png" compress="true"/>
+    <bitmap id="Moon12" filename="moon12.png" compress="true"/>
+    <bitmap id="Moon13" filename="moon13.png" compress="true"/>
+    <bitmap id="Moon14" filename="moon14.png" compress="true"/>
+    <bitmap id="Moon15" filename="moon15.png" compress="true"/>
+    <bitmap id="Moon16" filename="moon16.png" compress="true"/>
+    <bitmap id="Moon17" filename="moon17.png" compress="true"/>
+    <bitmap id="Moon18" filename="moon18.png" compress="true"/>
+    <bitmap id="Moon19" filename="moon19.png" compress="true"/>
+    <bitmap id="Moon20" filename="moon20.png" compress="true"/>
+    <bitmap id="Moon21" filename="moon21.png" compress="true"/>
+    <bitmap id="Moon22" filename="moon22.png" compress="true"/>
+    <bitmap id="Moon23" filename="moon23.png" compress="true"/>
+    <bitmap id="Moon24" filename="moon24.png" compress="true"/>
+    <bitmap id="Moon25" filename="moon25.png" compress="true"/>
+    <bitmap id="Moon26" filename="moon26.png" compress="true"/>
+    <bitmap id="Moon27" filename="moon27.png" compress="true"/>
+    <bitmap id="Moon28" filename="moon28.png" compress="true"/>
+    <bitmap id="Moon29" filename="moon29.png" compress="true"/>
+    <bitmap id="Moon30" filename="moon30.png" compress="true"/>
+    <bitmap id="Moon31" filename="moon31.png" compress="true"/>
+    <bitmap id="Moon32" filename="moon32.png" compress="true"/>
+    <bitmap id="Moon33" filename="moon33.png" compress="true"/>
+    <bitmap id="Moon34" filename="moon34.png" compress="true"/>
+    <bitmap id="Moon35" filename="moon35.png" compress="true"/>
+    <bitmap id="Moon36" filename="moon36.png" compress="true"/>
+    <bitmap id="Moon37" filename="moon37.png" compress="true"/>
+    <bitmap id="Moon38" filename="moon38.png" compress="true"/>
+    <bitmap id="Moon39" filename="moon39.png" compress="true"/>
+    <bitmap id="Moon40" filename="moon40.png" compress="true"/>
+    <bitmap id="Moon41" filename="moon41.png" compress="true"/>
+    <bitmap id="Moon42" filename="moon42.png" compress="true"/>
+    <bitmap id="Moon43" filename="moon43.png" compress="true"/>
+    <bitmap id="Moon44" filename="moon44.png" compress="true"/>
+    <bitmap id="Moon45" filename="moon45.png" compress="true"/>
+    <bitmap id="Moon46" filename="moon46.png" compress="true"/>
+    <bitmap id="Moon47" filename="moon47.png" compress="true"/>
+    <bitmap id="Moon48" filename="moon48.png" compress="true"/>
+    <bitmap id="Moon49" filename="moon49.png" compress="true"/>
+    <bitmap id="Moon50" filename="moon50.png" compress="true"/>
+    <bitmap id="Moon51" filename="moon51.png" compress="true"/>
+    <bitmap id="Moon52" filename="moon52.png" compress="true"/>
+    <bitmap id="Moon53" filename="moon53.png" compress="true"/>
+    <bitmap id="Moon54" filename="moon54.png" compress="true"/>
+    <bitmap id="Moon55" filename="moon55.png" compress="true"/>
+    <bitmap id="Moon56" filename="moon56.png" compress="true"/>
+    <bitmap id="Moon57" filename="moon57.png" compress="true"/>
+    <bitmap id="Moon58" filename="moon58.png" compress="true"/>
+    <bitmap id="Moon59" filename="moon59.png" compress="true"/>
+    <bitmap id="Moon60" filename="moon60.png" compress="true"/>
+    <bitmap id="Moon61" filename="moon61.png" compress="true"/>
+    <bitmap id="Moon62" filename="moon62.png" compress="true"/>
+    <bitmap id="Moon63" filename="moon63.png" compress="true"/>
+</drawables>

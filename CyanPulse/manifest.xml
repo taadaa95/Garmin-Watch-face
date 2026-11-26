@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<iq:manifest version="3" xmlns:iq="http://www.garmin.com/xml/connectiq">
+    <iq:application id="ae970fa7-dff5-4a16-89a8-2888291a5205" type="watchface" name="@Strings.AppName" entry="CyanPulseApp" launcherIcon="@Drawables.LauncherIcon" minApiLevel="5.1.0" version="0.1.6">
+        <iq:products><iq:product id="fr265s"/></iq:products>
+        <iq:permissions/>
+        <iq:languages><iq:language>eng</iq:language></iq:languages>
+        <iq:barrels/>
+    </iq:application>
+</iq:manifest>
