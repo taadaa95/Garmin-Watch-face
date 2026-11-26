@@ -6,7 +6,7 @@ Three independent Connect IQ watch faces for the Garmin Forerunner 265S (360 × 
 | --- | --- | --- | --- |
 | Minimal HR | 0.2.5 | Retro Nixie tubes | [Existing root project](#minimal-hr-v025--visible-unlit-leading-tube) |
 | Cyan Pulse | 0.1.6 | Minimalist digital clock, HR gauge and 60-minute graph | [CyanPulse](CyanPulse/) |
-| Lunaris | 0.1.2 | Astronomical lunar phase and starfield | [Lunaris](Lunaris/) |
+| Lunaris | 0.1.4 | Astronomical lunar phase and starfield | [Lunaris](Lunaris/) |
 
 Each project has its own application ID and can be installed independently. Enter its project directory, run `bash build.sh`, and copy the resulting `.prg` from `bin/` to `GARMIN/Apps/`. Build and simulator instructions are in each project's README. Signing keys are not included.
 

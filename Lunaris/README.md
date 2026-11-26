@@ -1,4 +1,4 @@
-# Lunaris v0.1.2
+# Lunaris v0.1.4
 
 An independent 360 × 360 AMOLED Connect IQ lunar watch face for Garmin Forerunner 265S (fr265s).
 
@@ -7,8 +7,20 @@ An independent 360 × 360 AMOLED Connect IQ lunar watch face for Garmin Forerunn
 - Large Moon, illuminated fraction and countdown to the next full moon.
 - Daily UTC ephemeris knots calculated with Swiss Ephemeris (Moshier), interpolated at runtime. New/full moon times are computed from apparent geocentric ecliptic longitude crossings. Data coverage: Jan 1 2024 through Dec 31 2037 UTC. Outside that range lunar data is explicitly unavailable.
 - The phase artwork has 64 states, so the visible terminator is quantized to 5.625 degrees. Numerical illumination is interpolated from daily phase angle knots. This is not a planetarium-grade rendering: fixed north-up orientation, no local sky angle, libration or eclipses. No network/location permission required.
-- Lunar artwork in this initial test uses a reconstructed texture from the approved AI concept (NOT NASA photographic data); dark/obscured portions have mirrored artistic reconstruction. To replace it with real lunar geography use the optional instructions below. The astronomical calculations are independent of the artwork.
+- Lunar artwork uses the full illuminated disk from the approved AI concept (NOT NASA photographic data). To replace it with real lunar geography use the optional instructions below. The astronomical calculations are independent of the artwork.
 - AOD: dim time-only, pixel shifting, no sensor/phase polling while asleep. Actual brightness/timeout controlled by Garmin.
+
+## Changes in v0.1.4
+- Converted all clock digits and colon from opaque black RGB cells to transparent antialiased PNGs.
+- Removed rectangular star exclusion zones; 700 stars span the continuous sky outside the lunar disk. Rebuilt all 64 matching tiles.
+- Heart and battery outlines use a transparent drawing background. Layout, astronomy, Moon size and AOD unchanged.
+- Asset transparency and tile alignment validated locally; simulator and device test pending.
+
+## Changes in v0.1.3
+- Enlarged the lunar disk from 180 to 216 pixels (44% more area) and rebuilt all 64 states using the new full-Moon concept texture.
+- Brighter and denser starfield, visible star clusters and blue halo; shifted time/date and side metrics upward to provide clearance.
+- Retained the illumination and next full moon countdown. Existing ephemeris, app ID, and always-on display unchanged.
+- Updated renderer uses matching indexed sky pixels outside the lunar disk to avoid tile seams.
 
 ## Changes in v0.1.2
 - Removed the lunar phase name beneath the Moon. Retained the illumination percentage and next full moon countdown. All artwork and lunar calculations unchanged.

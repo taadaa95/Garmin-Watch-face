@@ -52,7 +52,7 @@ class LunarisView extends Ui.WatchFace {
         dc.drawText(x,y,f,s,Gfx.TEXT_JUSTIFY_CENTER | Gfx.TEXT_JUSTIFY_VCENTER);
     }
     function line(dc,x1,y1,x2,y2,c,w) {
-        dc.setColor(c,BLACK); dc.setPenWidth(w); dc.drawLine(x1,y1,x2,y2);
+        dc.setColor(c,Gfx.COLOR_TRANSPARENT); dc.setPenWidth(w); dc.drawLine(x1,y1,x2,y2);
     }
     function onEnterSleep() as Void { asleep=true; }
     function onExitSleep() as Void { asleep=false; lastPoll=-1; lastLunar=-1; Ui.requestUpdate(); }
@@ -77,7 +77,7 @@ class LunarisView extends Ui.WatchFace {
                 moonBitmap=null;
                 moonBitmap=Ui.loadResource(moonIds[idx]); moonIndex=idx;
             }
-            dc.drawBitmap(78,122,moonBitmap);
+            dc.drawBitmap(70,112,moonBitmap);
         } else { text(dc,180,224,detailFont,"Lunar data unavailable",MUTED); }
         drawHeader(dc,h,clock.min,period);
         drawDetails(dc,now);
@@ -105,15 +105,15 @@ class LunarisView extends Ui.WatchFace {
         var d=Gregorian.info(Time.now(),Time.FORMAT_SHORT);
         var days=["SUN","MON","TUE","WED","THU","FRI","SAT"];
         var months=["JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"];
-        text(dc,180,39,dateFont,days[d.day_of_week-1]+", "+months[d.month-1]+" "+d.day.toString(),GOLD);
+        text(dc,180,34,dateFont,days[d.day_of_week-1]+", "+months[d.month-1]+" "+d.day.toString(),GOLD);
         var values=[h,m/10,m%10]; if (h>=10) { values=[h/10,h%10,m/10,m%10]; }
         var n=values.size(); var pw=dc.getTextWidthInPixels(period,periodFont);
         var x=(360-(n*49+18+7+pw))/2;
         for (var i=0;i<n;i+=1) {
-            if (i==n-2) { dc.drawBitmap(x,51,Ui.loadResource(Rez.Drawables.Colon)); x+=18; }
-            dc.drawBitmap(x,51,Ui.loadResource(digitIds[values[i]])); x+=49;
+            if (i==n-2) { dc.drawBitmap(x,44,Ui.loadResource(Rez.Drawables.Colon)); x+=18; }
+            dc.drawBitmap(x,44,Ui.loadResource(digitIds[values[i]])); x+=49;
         }
-        text(dc,x+7+pw/2,108,periodFont,period,GOLD);
+        text(dc,x+7+pw/2,101,periodFont,period,GOLD);
     }
     function phaseName(a) {
         if (a<6 || a>=354) { return "NEW MOON"; }
@@ -126,16 +126,16 @@ class LunarisView extends Ui.WatchFace {
         return "WANING CRESCENT";
     }
     function drawDetails(dc,now) {
-        var cx=45; var cy=177;
+        var cx=45; var cy=143;
         var pts=[[-8,-3],[-8,-6],[-5,-8],[-2,-8],[0,-5],[2,-8],[5,-8],[8,-6],[8,-3],[0,5],[-8,-3]];
         for (var i=1;i<pts.size();i+=1) { line(dc,cx+pts[i-1][0],cy+pts[i-1][1],cx+pts[i][0],cy+pts[i][1],GOLD,1); }
         var hr="--"; if (heartRate!=null) { hr=heartRate.toString(); }
-        text(dc,cx,197,metricFont,hr,WHITE); text(dc,cx,216,smallFont,"BPM",GOLD);
+        text(dc,cx,163,metricFont,hr,WHITE); text(dc,cx,182,smallFont,"BPM",GOLD);
         var battery=Sys.getSystemStats().battery.toNumber(); if (battery<0) { battery=0; } if (battery>100) { battery=100; }
         cx=315;
-        dc.setColor(GOLD,BLACK); dc.setPenWidth(1); dc.drawRoundedRectangle(cx-13,170,25,12,2); dc.fillRectangle(cx+13,173,2,6);
-        if (battery>0) { dc.fillRectangle(cx-10,173,(19*battery+99)/100,6); }
-        text(dc,cx,197,metricFont,battery.toString()+"%",WHITE);
+        dc.setColor(GOLD,Gfx.COLOR_TRANSPARENT); dc.setPenWidth(1); dc.drawRoundedRectangle(cx-13,136,25,12,2); dc.fillRectangle(cx+13,139,2,6);
+        if (battery>0) { dc.fillRectangle(cx-10,139,(19*battery+99)/100,6); }
+        text(dc,cx,163,metricFont,battery.toString()+"%",WHITE);
         if (lunarAngle!=null) {
             var illumination=((1-Math.cos(lunarAngle*0.01745329252))*50+0.5).toNumber();
             if (fullAt!=null) {
@@ -143,8 +143,8 @@ class LunarisView extends Ui.WatchFace {
                 // Always use the next full moon event, not the mean synodic period.
                 var countdown=days.format("%.1f")+"d";
                 if (days<1) { countdown=((fullAt-now)/3600.0).format("%.1f")+"h"; }
-                text(dc,180,337,smallFont,illumination.toString()+"% LIT  |  FULL IN "+countdown,WHITE);
-            } else { text(dc,180,337,smallFont,illumination.toString()+"% ILLUMINATED",WHITE); }
+                text(dc,180,341,smallFont,illumination.toString()+"% LIT  |  FULL IN "+countdown,WHITE);
+            } else { text(dc,180,341,smallFont,illumination.toString()+"% ILLUMINATED",WHITE); }
         }
     }
 }
